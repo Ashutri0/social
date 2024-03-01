@@ -1,0 +1,110 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body {
+    width: 100%;
+    height: 100%;
+}
+.o-hidden {
+    overflow: hidden;
+}
+.horizontal.dropdown-menu.show {
+    display: flex;
+    transform: translate(0px, 40px) !important;
+    padding: 2px 0;
+}
+.nav {
+    transition: transform 0.4s;
+    transform: translateX(50%);
+    left: -50%;
+}
+.nav.justify-content-end {
+    transform: translateX(0);
+    left: 0;
+}
+.content {
+    display: none;
+    z-index: 999;
+}
+#dateFilter{
+    border-radius: 10px;
+    padding: 2px 10px;
+    border: 1px solid #a1a1a1;
+}
+.show {
+    display: block;
+}
+.navitem a {
+    text-decoration: none;
+    color: #6b6b6b;
+    font-weight: 500;
+}
+.bord-lft {
+    border-left: 5px solid #d8d8d8;
+}
+.tabs-content {
+    position: relative;
+}
+.img-thumbnail {
+    width: 300px;
+}
+/* blog tab 2 */
+.blog {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 15px;
+    /* box-shadow: 0.8rem 0.8rem 1.4rem #c8d0e7, -0.2rem -0.2rem 1.8rem #ffffff; */
+}
+.blog:hover {
+    box-shadow: inset 0.2rem 0.2rem 0.5rem #c8d0e7, inset -0.2rem -0.2rem 0.5rem #ffffff;
+}
+
+.actions {
+    margin-top: 10px;
+}
+.actions #like{
+    border: none;
+    background-color: transparent;
+    transition: ease-in-out 0.2s;
+    padding: 2px 10px;
+    border-radius: 10px;
+    box-shadow: 0.3rem 0.3rem 0.6rem #c8d0e7, -0.2rem -0.2rem 0.5rem #ffffff;
+}
+.actions #like:hover{
+    box-shadow: inset 0.2rem 0.2rem 0.5rem #c8d0e7, inset -0.2rem -0.2rem 0.5rem #ffffff;
+}
+.actions #comment{
+    padding: 2px 10px;
+    background-color: transparent;
+    border-radius: 10px;
+    margin-left: 5px;
+    border: none;
+    transition: cubic-bezier(0.25, 0.46, 0.45, 0.94)0.2s;
+    box-shadow: 0.3rem 0.3rem 0.6rem #c8d0e7, -0.2rem -0.2rem 0.5rem #ffffff;
+}
+.actions #comment:hover{
+    /* scale: 1.05; */
+    box-shadow: inset 0.2rem 0.2rem 0.5rem #c8d0e7, inset -0.2rem -0.2rem 0.5rem #ffffff;
+}
+button {
+    margin-right: 10px;
+}
+select {
+    margin-bottom: 10px;
+}
+.comments {
+    margin-top: 10px;
+}
+#blogsContainer img {
+    max-width: 250px;
+    height: auto;
+    margin-top: -113px;
+    border-radius: 5px;
+    float: right;
+}
+.bg-custom{
+    /* background-color: #E4EBF5; */
+}
